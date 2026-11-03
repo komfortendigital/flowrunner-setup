@@ -2,26 +2,29 @@
 
 Set this up once and FlowRunner keeps itself up to date. No more zip files.
 
-## 1. Download
+## Mac
 
-- **Mac:** [FlowRunner-Setup-Mac.zip](https://github.com/komfortendigital/flowrunner-setup/releases/latest/download/FlowRunner-Setup-Mac.zip) (Apple Silicon and Intel)
-- **Windows:** [FlowRunner-Setup-Windows.zip](https://github.com/komfortendigital/flowrunner-setup/releases/latest/download/FlowRunner-Setup-Windows.zip)
+1. Open **Terminal** (press Cmd+Space, type Terminal, press Enter).
+2. Paste this line and press Enter:
 
-## 2. Install
+```
+bash -c "$(curl -fsSL https://raw.githubusercontent.com/komfortendigital/flowrunner-setup/main/install.sh)"
+```
 
-1. Unzip the file.
-2. Double-click **Install FlowRunner Updater**.
-3. Paste the **team code** from the FlowRunner message in ClickUp and press Enter. The code stays hidden while you paste, that is normal.
-4. Wait for **"Done. FlowRunner now updates itself."** Close the window.
+3. Paste the **team code** from ClickUp and press Enter (it stays hidden while you paste, that is normal).
 
-That's it. You can delete the downloaded files.
+## Windows
 
-## You will see a warning once
+1. Open **PowerShell** (press the Windows key, type PowerShell, press Enter).
+2. Paste this line and press Enter:
 
-The installer is our own tool, so your computer does not recognise it yet. It is safe to continue.
+```
+irm https://raw.githubusercontent.com/komfortendigital/flowrunner-setup/main/install.ps1 | iex
+```
 
-- **Mac:** "Apple could not verify..." Press **Done**, open **System Settings > Privacy & Security**, scroll down and press **Open Anyway**, then **Open**.
-- **Windows:** "Windows protected your PC". Press **More info**, then **Run anyway**.
+3. Paste the **team code** from ClickUp and press Enter.
+
+Wait for **"Done. FlowRunner now updates itself."** and close the window. That's it.
 
 ## What it does
 
